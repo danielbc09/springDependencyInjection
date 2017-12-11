@@ -1,8 +1,11 @@
 package guru.springframework.services;
 
+import org.springframework.stereotype.Service;
+
 /**
  * Created by bautisj on 12/11/2017.
  */
+@Service
 public class GreetingServiceImpl implements GreetingService{
 
 
