@@ -1,9 +1,9 @@
 package guru.springframework.services;
 
 /**
- * Created by bautisj on 12/11/2017.
+ * Created by jt on 5/24/17.
  */
 public interface GreetingService {
 
-    public String sayGreeting();
+    String sayGreeting();
 }

@@ -1,11 +1,10 @@
 package guru.springframework.controllers;
 
 import guru.springframework.services.GreetingService;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Controller;
 
 /**
- * Created by bautisj on 12/11/2017.
+ * Created by jt on 5/23/17.
  */
 @Controller
 public class MyController {
@@ -17,6 +16,7 @@ public class MyController {
     }
 
     public String hello(){
+        System.out.println("Hello!!! ");
 
         return greetingService.sayGreeting();
     }
