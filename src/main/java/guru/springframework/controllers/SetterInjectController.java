@@ -11,15 +11,15 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class SetterInjectController {
 
-    private GreetingService gretingService;
+    private GreetingService greetingService;
 
     public String sayHello(){
-        return gretingService.sayGreeting();
+        return greetingService.sayGreeting();
     }
 
     @Autowired
     @Qualifier("setterGreetingService")
-    public void setGretingService(GreetingService gretingService) {
-        this.gretingService = gretingService;
+    public void setGreetingService(GreetingService greetingService) {
+        this.greetingService = greetingService;
     }
 }
